@@ -1,42 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - PlataCount</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 750px; margin: 0 auto; padding: 24px; color: #1f2937; background: #f9fafb; }
-        .card { background: #ffffff; padding: 32px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-        h1 { color: #111827; font-size: 1.6rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 12px; }
-        h2 { color: #1f2937; font-size: 1.2rem; margin-top: 24px; }
-        p, li { color: #4b5563; font-size: 0.95rem; }
-        .badge { display: inline-block; background: #ecfdf5; color: #047857; padding: 4px 10px; border-radius: 9999px; font-weight: 600; font-size: 0.8rem; margin-bottom: 16px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad - PlataCount</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --badge-bg: #ecfdf5;
+      --badge-text: #059669;
+      --accent: #7c3aed;
+      --border: #e5e7eb;
+    }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background-color: var(--card-bg);
+      max-width: 760px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      padding: 36px 32px;
+      box-sizing: border-box;
+      position: relative;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 6px;
+      background: var(--bg);
+      padding: 4px;
+      border-radius: 8px;
+    }
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      color: #111827;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+    }
+    .updated {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    ul {
+      margin: 12px 0 20px 24px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="card">
-        <span class="badge">100% Offline & Privada</span>
-        <h1>Política de Privacidad - PlataCount</h1>
-        <p><strong>Última actualización:</strong> Septiembre 2026</p>
-        <p>Esta política de privacidad aplica a la aplicación móvil <strong>PlataCount</strong> (en adelante, "la Aplicación"), desarrollada por <strong>DM Vibe Labs</strong>.</p>
-        
-        <h2>1. Recopilación y Uso de Datos</h2>
-        <p>PlataCount es una herramienta utilitaria diseñada bajo la filosofía de <strong>cero recolección de datos (Offline First)</strong>.</p>
-        <ul>
-            <li><strong>No recopilamos información personal:</strong> La Aplicación no solicita ni almacena nombres, números de teléfono, correos electrónicos, cuentas ni datos de identidad.</li>
-            <li><strong>Sin telemetría ni rastreo:</strong> La Aplicación no incluye SDKs de publicidad, herramientas de analítica ni bibliotecas de seguimiento de terceros.</li>
-            <li><strong>Almacenamiento 100% Local:</strong> Todos los datos generados (conteos de billetes, denominaciones personalizadas e historial de arqueos) residen exclusivamente en la memoria interna de su dispositivo y nunca son transmitidos a servidores externos.</li>
-        </ul>
 
-        <h2>2. Permisos del Dispositivo</h2>
-        <p>La Aplicación no requiere permisos invasivos para funcionar. No accede a su ubicación, cámara, libreta de contactos ni estado del teléfono.</p>
-
-        <h2>3. Seguridad</h2>
-        <p>Dado que no operamos servidores en la nube ni transmitimos información a través de internet, sus datos de conteo y caja están protegidos por las medidas de seguridad físicas y de acceso que usted tenga configuradas en su propio teléfono móvil.</p>
-
-        <h2>4. Contacto y Soporte</h2>
-        <p>Si tiene alguna duda o consulta respecto al funcionamiento de la Aplicación o esta política, puede comunicarse con el desarrollador a través de nuestro canal oficial:</p>
-        <p><strong>Correo electrónico:</strong> soporte@dmvibelabs.com</p>
+  <main class="card">
+    <div class="top-bar">
+      <span class="badge" id="badgeText">100% Offline & Privada</span>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnEs" onclick="setLanguage('es')">ES</button>
+        <button class="lang-btn" id="btnEn" onclick="setLanguage('en')">EN</button>
+      </div>
     </div>
+
+    <!-- SECCIÓN ESPAÑOL -->
+    <div id="contentEs">
+      <h1>Política de Privacidad - PlataCount</h1>
+      <div class="updated">Última actualización: Septiembre 2026</div>
+      <p>Esta política de privacidad aplica a la aplicación móvil <strong>PlataCount</strong> (en adelante, "la Aplicación"), desarrollada por <strong>DM Vibe Labs</strong>.</p>
+
+      <h2>1. Recopilación y Uso de Datos</h2>
+      <p>PlataCount es una herramienta utilitaria diseñada bajo la filosofía de <strong>cero recolección de datos (Offline First)</strong>.</p>
+      <ul>
+        <li><strong>No recopilamos información personal:</strong> La Aplicación no solicita ni almacena nombres, números de teléfono, correos electrónicos, cuentas ni datos de identidad.</li>
+        <li><strong>Sin telemetría ni rastreo:</strong> La Aplicación no incluye SDKs de publicidad, herramientas de analítica ni bibliotecas de seguimiento de terceros.</li>
+        <li><strong>Almacenamiento 100% Local:</strong> Todos los datos generados (conteos de billetes, denominaciones personalizadas e historial de arqueos) residen exclusivamente en la memoria interna de su dispositivo y nunca son transmitidos a servidores externos.</li>
+      </ul>
+
+      <h2>2. Permisos del Dispositivo</h2>
+      <p>La Aplicación no requiere permisos invasivos para funcionar. No accede a su ubicación, cámara, libreta de contactos ni estado del teléfono.</p>
+
+      <h2>3. Seguridad</h2>
+      <p>Dado que no operamos servidores en la nube ni transmitimos información a través de internet, sus datos de conteo y caja están protegidos por las medidas de seguridad físicas y de acceso que usted tenga configuradas en su propio teléfono móvil.</p>
+
+      <h2>4. Contacto y Soporte</h2>
+      <p>Si tiene alguna duda o consulta respecto al funcionamiento de la Aplicación o esta política, puede comunicarse con el desarrollador a través de nuestro canal oficial:</p>
+      <p><strong>Correo electrónico:</strong> <a href="mailto:dmvibelabs@gmail.com">dmvibelabs@gmail.com</a></p>
+    </div>
+
+    <!-- SECCIÓN INGLÉS -->
+    <div id="contentEn" style="display: none;">
+      <h1>Privacy Policy - PlataCount</h1>
+      <div class="updated">Last updated: September 2026</div>
+      <p>This privacy policy applies to the mobile application <strong>PlataCount</strong> (hereinafter, "the Application"), developed by <strong>DM Vibe Labs</strong>.</p>
+
+      <h2>1. Data Collection and Usage</h2>
+      <p>PlataCount is a utility tool designed under a strict <strong>zero data collection</strong> philosophy (<strong>Offline First</strong>).</p>
+      <ul>
+        <li><strong>No personal data collected:</strong> The Application does not request, collect, or store personal information such as names, phone numbers, email addresses, or identity credentials.</li>
+        <li><strong>No telemetry or tracking:</strong> The Application does not integrate advertising SDKs, analytics platforms, or third-party tracking libraries.</li>
+        <li><strong>100% Local Storage:</strong> All generated data (cash counts, custom denominations, and audit history) resides strictly within the internal memory of your device and is never transmitted to external servers.</li>
+      </ul>
+
+      <h2>2. Device Permissions</h2>
+      <p>The Application does not require intrusive device permissions to operate. It does not access your location, camera, contacts list, or phone state.</p>
+
+      <h2>3. Security</h2>
+      <p>Because we do not operate cloud servers or transmit information over the internet, your counting records and cash tally data are protected by the physical and access security measures configured on your own mobile device.</p>
+
+      <h2>4. Contact and Support</h2>
+      <p>If you have any questions or inquiries regarding the Application or this policy, you may contact the developer through our official support channel:</p>
+      <p><strong>Email:</strong> <a href="mailto:dmvibelabs@gmail.com">dmvibelabs@gmail.com</a></p>
+    </div>
+  </main>
+
+  <script>
+    function setLanguage(lang) {
+      const isEn = lang === 'en';
+      document.getElementById('contentEs').style.display = isEn ? 'none' : 'block';
+      document.getElementById('contentEn').style.display = isEn ? 'block' : 'none';
+      document.getElementById('btnEs').className = isEn ? 'lang-btn' : 'lang-btn active';
+      document.getElementById('btnEn').className = isEn ? 'lang-btn active' : 'lang-btn';
+      document.getElementById('badgeText').textContent = isEn ? '100% Offline & Private' : '100% Offline & Privada';
+      document.documentElement.lang = lang;
+    }
+  </script>
 </body>
 </html>
