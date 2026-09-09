@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos y Condiciones - PlataCount</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --badge-bg: #eff6ff;
+      --badge-text: #2563eb;
+      --accent: #7c3aed;
+      --border: #e5e7eb;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      background-color: var(--card-bg);
+      max-width: 760px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      padding: 36px 32px;
+      position: relative;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .lang-switcher {
+      display: flex;
+      gap: 6px;
+      background: var(--bg);
+      padding: 4px;
+      border-radius: 8px;
+    }
+    .lang-btn {
+      border: none;
+      background: none;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      color: var(--text-muted);
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--accent);
+      color: #ffffff;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      color: #111827;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 16px;
+      line-height: 1.25;
+    }
+    .updated {
+      font-size: 14px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 16px;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+    ul {
+      margin: 12px 0 20px 20px;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #111827;
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Reglas para pantallas móviles */
+    @media (max-width: 640px) {
+      body {
+        padding: 0;
+        background-color: var(--card-bg);
+      }
+      .card {
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 20px 18px 36px 18px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      h2 {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <div class="top-bar">
+      <span class="badge" id="badgeText">Términos Legales</span>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btnEs" onclick="setLanguage('es')">ES</button>
+        <button class="lang-btn" id="btnEn" onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+
+    <!-- SECCIÓN ESPAÑOL -->
+    <div id="contentEs">
+      <h1>Términos y Condiciones - PlataCount</h1>
+      <div class="updated">Última actualización: Septiembre 2026</div>
+      <p>Bienvenido a <strong>PlataCount</strong>. Estos Términos y Condiciones regulan el uso de la aplicación móvil desarrollada por <strong>DM Vibe Labs</strong>.</p>
+
+      <h2>1. Aceptación de los Términos</h2>
+      <p>Al descargar, instalar o utilizar esta aplicación, usted acepta quedar legalmente vinculado por estos términos. Si no está de acuerdo con alguna cláusula, no debe utilizar la aplicación.</p>
+
+      <h2>2. Propósito del Software</h2>
+      <p>PlataCount es exclusivamente una utilidad interactiva de cálculo diseñada para asistir en el conteo manual y arqueo de dinero físico (billetes y monedas). La aplicación:</p>
+      <ul>
+        <li><strong>No constituye asesoramiento financiero ni contable:</strong> No sustituye la labor de un profesional contable ni auditorías oficiales.</li>
+        <li><strong>No realiza transacciones monetarias:</strong> No almacena dinero electrónico, no procesa pagos ni se conecta con cuentas bancarias.</li>
+      </ul>
+
+      <h2>3. Exclusión de Garantías y Deslinde de Responsabilidad</h2>
+      <p>La aplicación se proporciona "tal cual" (as-is) y "según disponibilidad". <strong>DM Vibe Labs</strong> no garantiza que la aplicación esté 100% libre de errores matemáticos derivados del uso o de fallos del sistema operativo.</p>
+      <ul>
+        <li><strong>Responsabilidad del usuario:</strong> La verificación física del conteo, la autenticidad del dinero y la exactitud de los valores ingresados son entera responsabilidad de la persona que opera la app.</li>
+        <li><strong>Límite de responsabilidad:</strong> En ningún caso el desarrollador será responsable por pérdidas económicas, descuadres o faltantes de caja, cobro de billetes falsos o daños indirectos derivados del uso de PlataCount.</li>
+      </ul>
+
+      <h2>4. Almacenamiento Local</h2>
+      <p>Todos los conteos y datos históricos se guardan únicamente de forma local en la memoria de su dispositivo. El usuario es responsable de salvaguardar su equipo ante pérdidas, roturas o borrado accidental de datos.</p>
+
+      <h2>5. Propiedad Intelectual</h2>
+      <p>El código fuente, diseño de interfaz, logotipos, nombres comerciales y elementos gráficos de PlataCount son propiedad de DM Vibe Labs y se encuentran protegidos por las leyes de propiedad intelectual.</p>
+
+      <h2>6. Modificaciones</h2>
+      <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. El uso continuado de la aplicación implica la aceptación de los términos actualizados.</p>
+
+      <h2>7. Contacto</h2>
+      <p>Para dudas, consultas legales o reporte de incidentes técnicos, puede comunicarse a:</p>
+      <p><strong>Correo electrónico:</strong> <a href="mailto:dmvibelabs@gmail.com">dmvibelabs@gmail.com</a></p>
+    </div>
+
+    <!-- SECCIÓN INGLÉS -->
+    <div id="contentEn" style="display: none;">
+      <h1>Terms and Conditions - PlataCount</h1>
+      <div class="updated">Last updated: September 2026</div>
+      <p>Welcome to <strong>PlataCount</strong>. These Terms and Conditions govern the use of the mobile application developed by <strong>DM Vibe Labs</strong>.</p>
+
+      <h2>1. Acceptance of Terms</h2>
+      <p>By downloading, installing, or using this application, you agree to be bound by these terms. If you do not agree with any of these terms, you must not use the application.</p>
+
+      <h2>2. Purpose of the Software</h2>
+      <p>PlataCount is strictly an interactive calculation utility designed to assist in manual cash counting and cash drawer audits. The application:</p>
+      <ul>
+        <li><strong>Does not constitute financial or accounting advice:</strong> It does not replace professional auditing or certified accounting procedures.</li>
+        <li><strong>Does not process monetary transactions:</strong> It does not store electronic money, process payments, or link to banking institutions.</li>
+      </ul>
+
+      <h2>3. Disclaimer of Warranties and Limitation of Liability</h2>
+      <p>The application is provided on an "as is" and "as available" basis. <strong>DM Vibe Labs</strong> makes no warranties regarding uninterrupted service or error-free operation.</p>
+      <ul>
+        <li><strong>User responsibility:</strong> Physical verification of cash, banknote authenticity, and the accuracy of entered quantities are the sole responsibility of the user.</li>
+        <li><strong>Limitation of liability:</strong> Under no circumstances shall the developer be held liable for monetary discrepancies, cash shortages, acceptance of counterfeit bills, or any indirect damages resulting from the use of PlataCount.</li>
+      </ul>
+
+      <h2>4. Local Storage</h2>
+      <p>All tally counts and audit histories reside solely within the local memory of your device. The user is entirely responsible for backing up device information and securing hardware against data loss.</p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>All source code, user interface designs, trademarks, and branding assets of PlataCount belong to DM Vibe Labs and are protected under international intellectual property regulations.</p>
+
+      <h2>6. Amendments</h2>
+      <p>We reserve the right to revise these terms at any time. Continued use of the application constitutes acceptance of any modified terms.</p>
+
+      <h2>7. Contact</h2>
+      <p>For questions, legal inquiries, or technical feedback, you may reach out to:</p>
+      <p><strong>Email:</strong> <a href="mailto:dmvibelabs@gmail.com">dmvibelabs@gmail.com</a></p>
+    </div>
+  </main>
+
+  <script>
+    function setLanguage(lang) {
+      const isEn = lang === 'en';
+      document.getElementById('contentEs').style.display = isEn ? 'none' : 'block';
+      document.getElementById('contentEn').style.display = isEn ? 'block' : 'none';
+      document.getElementById('btnEs').className = isEn ? 'lang-btn' : 'lang-btn active';
+      document.getElementById('btnEn').className = isEn ? 'lang-btn active' : 'lang-btn';
+      document.getElementById('badgeText').textContent = isEn ? 'Legal Terms' : 'Términos Legales';
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+</html>
